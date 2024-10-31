@@ -1,0 +1,14 @@
+cc_library_static {
+    name: "libinit_Pacman",
+    header_libs: [
+        "libbase_headers",
+    ],
+    cflags: [
+        "-Wall",
+    ],
+    static_libs: [
+        "libbase",
+    ],
+    srcs: ["init_Pacman.cpp"],
+    recovery_available: true,
+}
