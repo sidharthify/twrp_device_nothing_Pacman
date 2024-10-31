@@ -58,6 +58,12 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mt6886.rc \
+    init.mt6886.usb.rc \
+    ueventd.mt6886.rc
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -70,3 +76,15 @@ PRODUCT_PACKAGES += \
 
 # HIDL Service
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
+
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.mt6886.rc
+
+# Filesystem table
+PRODUCT_PACKAGES += \
+    fstab.mt6886 \
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
