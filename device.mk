@@ -32,6 +32,17 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=$(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE) \
     POSTINSTALL_OPTIONAL_vendor=true
 
+# Additional Target Libraries
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hardware.graphics.common@1.0 \
+    libion \
+    libxml2
+
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.graphics.common@1.0.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+
 # Bootctrl
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl \
@@ -43,7 +54,19 @@ PRODUCT_PACKAGES_DEBUG += \
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # MTK plpath utils
 PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
+
+# HIDL Service
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
