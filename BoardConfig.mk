@@ -89,7 +89,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := nothing_dynamic_partitions
-BOARD_NOTHING_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product odm vendor_dlkm odm_dlkm system_dlkm
+BOARD_NOTHING_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product odm vendor_dlkm odm_dlkm
 BOARD_NOTHING_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
 # Hardware
