@@ -43,15 +43,6 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
-# Bootctrl
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctrl
-
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
