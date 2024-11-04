@@ -116,6 +116,9 @@ BOARD_SUPER_PARTITION_GROUPS := nothing_dynamic_partitions
 BOARD_NOTHING_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product odm vendor_dlkm odm_dlkm
 BOARD_NOTHING_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Hardware
 BOARD_USES_MTK_HARDWARE := true
 
