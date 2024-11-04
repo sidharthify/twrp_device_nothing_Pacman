@@ -148,6 +148,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_MAX_BRIGHTNESS := 2000
+# include python, for ABX conversion
+TW_INCLUDE_PYTHON := true
 
 # Modules
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
