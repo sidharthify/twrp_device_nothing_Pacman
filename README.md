@@ -1,5 +1,12 @@
 ### Custom Recovery Tree for the Nothing Phone 2a (Pacman)
 
+```
+# SPDX-License-Identifier: Apache-2.0
+```
+
+#### The Linux Kernel binary and it's accompanying modules are provided by [Nothing Technology Limited](https://github.com/NothingOSS) under the GNU Public License
+
+
 =========================================
 
 The Nothing Phone 2A (codenamed _"Pacman"_) is a mid-range smartphone from Nothing released in early 2024.
@@ -18,7 +25,7 @@ Storage | 128/256 GB
 Battery | Li-Po 5000 mAh, non-removable
 Display | 1080 x 2412 pixels, 6.7 inches, 60/120 hz
 
-## After you've built a custom recovery using this tree, you can enter the following command in fastboot to flash it (yes, the recovery is stored in vendorboot)
+## After you've built a custom recovery using this tree, you can enter the following command in fastboot to flash it (yes, the recovery is stored in `vendor_boot`)
 
 ```
 fastboot flash vendor_boot vendor_boot.img
