@@ -74,10 +74,5 @@ system_dlkm                                             /system_dlkm            
 /dev/block/by-name/vbmeta_system                        /vbmeta_system              emmc        defaults                                                                                                                                         first_stage_mount,nofail,slotselect,avb=vbmeta
 /dev/block/by-name/vendor_boot                          /vendor_boot                emmc        defaults                                                                                                                                         defaults
 
-/devices/platform/soc/11240000.mmc*                     auto                        auto        defaults                                                                                                                                         voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/usb_xhci*                             auto                        vfat        defaults                                                                                                                                         voldmanaged=usbotg:auto
-/devices/platform/soc/11201000.usb0/11200000.xhci*      auto                        vfat        defaults                                                                                                                                         voldmanaged=usbotg:auto
-/devices/platform/soc/11211000.usb1/11210000.xhci*      auto                        vfat        defaults                                                                                                                                         voldmanaged=usbotg:auto
-
 /dev/block/zram0                                        none                        swap        defaults                                                                                                                                         zramsize=75%,swapprio=10
 
