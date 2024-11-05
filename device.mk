@@ -63,7 +63,7 @@ PRODUCT_PACKAGES += \
 # HIDL Service
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
-# Recovery
+# Recovery init
 PRODUCT_PACKAGES += \
     init.recovery.mt6886.rc
 
@@ -90,3 +90,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    servicemanager.recovery.rc \
+    snapuserd.rc
