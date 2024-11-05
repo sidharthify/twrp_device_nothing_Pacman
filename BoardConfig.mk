@@ -150,7 +150,13 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
-TW_MAX_BRIGHTNESS := 2000
+TW_MAX_BRIGHTNESS := 2047
+TW_NO_SCREEN_BLANK := true
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
+TW_Y_OFFSET := 95
+TW_H_OFFSET := -95
+
 # include python, for ABX conversion
 TW_INCLUDE_PYTHON := true
 
