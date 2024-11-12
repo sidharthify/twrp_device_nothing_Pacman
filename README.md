@@ -17,7 +17,7 @@ The Nothing Phone 2A (codenamed _"Pacman"_) is a mid-range smartphone from Nothi
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | 2 x 2.8GHz Cortex-A715 +6 x Cortex-A510
-Chipset | Mediatek Dimensity 7200Ultra
+Chipset | Mediatek Dimensity 7200+
 GPU     | Mali-G610 MC6
 Memory  | 8/12 GB RAM
 Shipped Android Version | 14
