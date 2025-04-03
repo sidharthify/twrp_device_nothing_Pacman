@@ -1,0 +1,4 @@
+# Soft dependencies extracted from modules themselves.
+softdep mali_kbase_mt6886 pre: memory_group_manager
+softdep mtk_sec_heap pre: apusys
+softdep sspm_v3 pre: tinysys-scmi.ko
