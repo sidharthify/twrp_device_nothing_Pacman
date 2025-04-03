@@ -1,3 +1,0 @@
-# Soft dependencies extracted from modules themselves.
-softdep mt6886_dcm pre:mtk_dcm.ko
-softdep slbc_mt6886 pre: tinysys-scmi.ko
