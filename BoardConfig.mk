@@ -92,7 +92,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules/modules.load))
-BOARD_VENDOR_KERNEL_MODULES := $(sort $(addprefix $(KERNEL_PATH)/modules/vendor_dlkm/, $(notdir $(BOARD_VENDOR_KERNEL_MODULES_LOAD)))
+BOARD_VENDOR_KERNEL_MODULES := $(sort $(addprefix $(KERNEL_PATH)/modules/vendor_dlkm/, $(notdir $(BOARD_VENDOR_KERNEL_MODULES_LOAD))))
 
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules/modules.load.vendor_boot))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(addprefix $(KERNEL_PATH)/modules/vendor_boot/, $(notdir $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)))
